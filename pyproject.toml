@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retrievalbench"
+version = "0.1.0"
+description = "Offline, deterministic retrieval evaluation with a BM25 baseline"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{name = "BhuvanM"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2", "ruff==0.14.3"]
+
+[project.scripts]
+retrievalbench = "retrievalbench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

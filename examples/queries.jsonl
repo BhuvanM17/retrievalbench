@@ -1,0 +1,8 @@
+{"query_id":"q01","text":"retry failed network request backoff","relevant_doc_ids":["d01","d03"]}
+{"query_id":"q02","text":"prevent duplicate payment charge on retry","relevant_doc_ids":["d04"]}
+{"query_id":"q03","text":"database index full scan query plan","relevant_doc_ids":["d05","d06"]}
+{"query_id":"q04","text":"pagination stable cursor new rows","relevant_doc_ids":["d07"]}
+{"query_id":"q05","text":"evaluate retrieval ranking relevance","relevant_doc_ids":["d11","d12"]}
+{"query_id":"q06","text":"find meaning with similar text","relevant_doc_ids":["d10"]}
+{"query_id":"q07","text":"cache expired requests duplicate work","relevant_doc_ids":["d13","d14"]}
+{"query_id":"q08","text":"investigate slow service request latency","relevant_doc_ids":["d02","d16"]}

@@ -1,0 +1,16 @@
+{"doc_id":"d01","text":"HTTP request retry: retry transient network errors with exponential backoff and random jitter. Bound the number of attempts."}
+{"doc_id":"d02","text":"HTTP request timeouts: set connection and read timeouts. A deadline prevents slow upstream services from blocking a worker forever."}
+{"doc_id":"d03","text":"Queue retry policy: retry failed jobs with backoff. Route poison messages to a dead letter queue after the attempt limit."}
+{"doc_id":"d04","text":"Idempotency keys make repeated payment requests safe. A server stores the first result so a retry does not create a second charge."}
+{"doc_id":"d05","text":"Database indexes speed filtered reads. A composite index supports queries on its leading columns, at the cost of extra writes and storage."}
+{"doc_id":"d06","text":"Use an EXPLAIN query plan to inspect database scans. An index can avoid a full table scan for selective lookup queries."}
+{"doc_id":"d07","text":"Pagination with a cursor uses a stable ordering and a continuation token. Cursor pagination avoids skipping records when new rows arrive."}
+{"doc_id":"d08","text":"Offset pagination uses LIMIT and OFFSET. Large offsets require scanning discarded rows and can become expensive."}
+{"doc_id":"d09","text":"BM25 is a lexical retrieval ranking function using term frequency, document length and inverse document frequency. It matches words rather than embeddings."}
+{"doc_id":"d10","text":"Dense embeddings map documents and queries into vectors. Nearest neighbor search can retrieve paraphrases with different vocabulary."}
+{"doc_id":"d11","text":"A retrieval evaluation needs relevance judgments. Recall measures coverage of relevant documents; reciprocal rank rewards the first relevant result."}
+{"doc_id":"d12","text":"Normalized discounted cumulative gain evaluates ranked retrieval results. nDCG discounts lower positions and divides by an ideal relevance ordering."}
+{"doc_id":"d13","text":"A cache stores computed results with a time to live. Cache invalidation removes stale values after the source data changes."}
+{"doc_id":"d14","text":"A cache stampede happens when many requests refill one expired key. A per-key lock or single flight mechanism prevents duplicate work."}
+{"doc_id":"d15","text":"Structured logging records events with named fields such as request ID and error code. Never log credentials or secret tokens."}
+{"doc_id":"d16","text":"Distributed tracing follows one request across services using trace IDs and spans. Traces help explain latency between service boundaries."}

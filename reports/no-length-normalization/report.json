@@ -1,0 +1,189 @@
+{
+  "evaluation": {
+    "aggregation": "macro_average_over_all_queries",
+    "cutoffs": [
+      1,
+      3,
+      5
+    ],
+    "missing_query_policy": "zero",
+    "relevance": "binary",
+    "unjudged_document_policy": "nonrelevant",
+    "zero_relevance_policy": "reject"
+  },
+  "inputs": {
+    "queries_sha256": "b7f241c2e7e990191bbcfdd4058c2d8982c88703c6b0bba97e13b0c75bdf5903"
+  },
+  "runs": {
+    "bm25": {
+      "aggregate": {
+        "1": {
+          "mrr": 0.75,
+          "ndcg": 0.75,
+          "recall": 0.5
+        },
+        "3": {
+          "mrr": 0.8125,
+          "ndcg": 0.8366783004521589,
+          "recall": 0.875
+        },
+        "5": {
+          "mrr": 0.84375,
+          "ndcg": 0.890512870211333,
+          "recall": 1.0
+        }
+      },
+      "per_query": {
+        "q01": {
+          "1": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 0.5
+          },
+          "3": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          },
+          "5": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          }
+        },
+        "q02": {
+          "1": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          },
+          "3": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          },
+          "5": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          }
+        },
+        "q03": {
+          "1": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 0.5
+          },
+          "3": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          },
+          "5": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          }
+        },
+        "q04": {
+          "1": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          },
+          "3": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          },
+          "5": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          }
+        },
+        "q05": {
+          "1": {
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "recall": 0.0
+          },
+          "3": {
+            "mrr": 0.5,
+            "ndcg": 0.6934264036172708,
+            "recall": 1.0
+          },
+          "5": {
+            "mrr": 0.5,
+            "ndcg": 0.6934264036172708,
+            "recall": 1.0
+          }
+        },
+        "q06": {
+          "1": {
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "recall": 0.0
+          },
+          "3": {
+            "mrr": 0.0,
+            "ndcg": 0.0,
+            "recall": 0.0
+          },
+          "5": {
+            "mrr": 0.25,
+            "ndcg": 0.43067655807339306,
+            "recall": 1.0
+          }
+        },
+        "q07": {
+          "1": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 0.5
+          },
+          "3": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          },
+          "5": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          }
+        },
+        "q08": {
+          "1": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 0.5
+          },
+          "3": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          },
+          "5": {
+            "mrr": 1.0,
+            "ndcg": 1.0,
+            "recall": 1.0
+          }
+        }
+      },
+      "query_count": 8,
+      "retriever": {
+        "b": 0.0,
+        "document_count": 16,
+        "documents_sha256": "a96404d18c2b7d61ec38906427753344f6299bb90b5bb0332172dbecc1c519f6",
+        "k1": 1.5,
+        "limit": 5,
+        "query_term_frequency": "binary",
+        "tokenizer": "unicode_word_casefold",
+        "type": "bm25"
+      }
+    }
+  },
+  "schema_version": 1,
+  "tool_version": "0.1.0"
+}
